@@ -1,1 +1,0 @@
-copy /b ST05X24.bin + zeros2k.bin + zeros24k.bin + WDXT-150.bin + zeros24k.bin flashrom.bin

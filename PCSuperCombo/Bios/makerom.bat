@@ -1,1 +1,0 @@
-copy /b xtl_300.bin + zeros_22k.bin + xtl_320.bin + zeros_22k.bin flashrom.bin

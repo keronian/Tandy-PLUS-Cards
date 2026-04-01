@@ -1,31 +1,14 @@
-ISA-Cards
-=========
+Tandy-PLUS-Cards
+================
 
-ISA card designs for use in Vintage PCs.
+Tandy PLUS card designs for use in Tandy 1000 EX/HX
 
-ISA Template
-============
-
-**Status:** Fit tested and appears correct.
-
-**Description:** A template from which to build ISA cards. The board dimensions
-around the edge connector are from an early IBM PC Technical
-Reference Manual (5150 or 5160). The rear bracket positioning
-has been measured from an original IBM floppy controller taken
-from an IBM 5150. This board was an excellent fit when test-fitted
-in an early Tandy 1000 (25-1000).
-
-The mounting for the CF adapter has also been comfirmed in the
-same Tandy 1000. It too was a excellent fit. 
-
-There may be some variation in fit due to various tolerances. 
-The fit does not seem to be particularly important - a wide variation
-in fit has been found across various commercial ISA cards.
+I took the work that Jayseon Lee-Steere did creating the Dual Serial card and the Tandy PLUS Template and used those to create a Tandy version of the Dual Serial card.  Additionally, I inverted his ISA to Tandy Plus adapter in order to be able to plug ISA cards into Tandy PLUS slots.  Tandy PLUS Template, EX-HX Combo, and Tandy 1000 Essentials are retained unchanged, but ISA Specific cards were removed to maintain focus for this repo.
 
 Tandy PLUS Template
 ===================
 
-**Status:** Untested.
+**Status:** Used to create Dual Serial board
 
 **Description:** A template from which to design cards and/or back plates
 for the Tandy 1000 EX/HX computers. Includes approximate board outlines
@@ -33,57 +16,12 @@ as measured from Tandy's memory/DMA board, Tandy's serial board and
 Rob Krinecki's 3 in 1 board. Includes various notes about safe areas,
 potential places to extend the board dimensions, etc.
 
-CF-Combo-Super-Lite <sup>1, 2</sup>
-===================
+DualSerialPlus <sup>1</sup>
+==============
 
-![CF-Combo-Super-Lite](Images/CF-Combo-Super-Lite.jpg)
+**Status:** Untested. Waiting on PCB manufacturing
 
-**Status:** Design built and tested in all configurations. **There is a currently
-an error which may cause issues when other devices are performing DMA transfers.
-Recommend only the Tandy 1000 configuration of this card which has no DMA present.** 
- 
-**Description:** An 8 bit ISA card with fully-contained compact flash card and
-XT-IDE BIOS. This simplified design uses only 3 ICs for the CF/BIOS functionality.
-It makes use of a commonly availalbe, inexpensive compact flash adapter with
-integrated mounting bracket.
-
-The board optionally supports the following features:
-
-* An integrated DS1216-E compatible SmartWatch. See 
-  https://github.com/JayesonLS/SmartWatchRedux for more information
-   about the Dallas SmartWatch.
-* 512K of SRAM for the Tandy 1000, 1000A or 1000 HD models only
-  (25-1000, 25-1000A, 25-1001). This will bring a stock Tandy
-  1000 to 640K. Remove any other memory upgradebefore installing.
-  *Do not use the 512K RAM option in any other model of Tandy 1000
-  or PC. The memory mapping is only correct for the supported Tandy
-  1000 models and will result in memory conflicts in any other system.*
-
-BasicSerial
-===========
-
-**Status:** Built and fully tested. The Rear bracket is located too
-high and needs to be corrected. No other issues found.
-
-**Description:** Adds a single 9 pin serial port to a vintage PC. Created with early
-Tandy 1000's in mind which have no COM ports from the factory.
-
-Decoding is handled by a 74xx688. Alternatively, a JED file is provided
-for programming the needed decode functionality into a GAL16V8/ATF16V8.
-
-**Configuration:** Before installing, configure the port selection jumpers
-to a COM port not yet present in the system. Details are located on the
-board by the port jumpers. Configure the IRQ jumper to an approriate
-selection. For no IRQ, remove the IRQ jumper. Suggested IRQ settings are
-located on the board by the IRQ jumper.
-
-DualSerial <sup>1</sup>
-==========
-
-**Status:** Untested. Vertical positions of serial connectors are only
-approximate (waiting on a bracket to arrive for reference).
-
-**Description:** Adds *two* 9 pin serial ports to a vintage PC. Created with early
+**Description:** Adds *two* 9 pin serial ports to a Tandy 1000 EX/HX. Created with early
 Tandy 1000's in mind which have no COM ports from the factory.
 
 **Configuration:** Before installing, configure the port selection jumpers
@@ -139,16 +77,28 @@ The bracket is from a Compact Flash to IDE adapter intended for
 installation into PCI slots. It must be raised off the board using
 standoffs totalling 14.6mm high.
 
-ISAtoTandyPlus
+DualSerialPlusBracket
+=====================
+
+**Status:** Untested.  Waiting on PCB manufacturing
+
+**Description:** Bracket for the above serial card.  Contains mounting holes for multiple
+positions.  There are also User Drawings at various positions that can be used to
+change the dimensions if a bracket is desired for a specific position
+
+TandyPlusToISA
 ==============
 
-**Status:** Untested.
+**Status:** Untested, waiting on PCBs
 
-**Description:** Allows connection of a Tandy 1000 EX/HX Plus board in a standard
-ISA slot. Intended for use on an ISA riser board for 
-development/testing. 
+**Description:** Allows connection of an ISA card to a Tandy 1000 EX/HX Plus slot.
 
-Not intended for permanent installation.
+TandyPlusToISA-Long
+===================
+
+**Status:** Untested
+
+**Description:** Same as the above version, but it's a bit longer in cases that the extra clearance is preferred for things like serial ports
 
 ---------------
 <sup>**1**</sup> Construction requires programming of one or
@@ -159,4 +109,3 @@ Not intended for permanent installation.
 <sup>**2**</sup> Construction requires programming of the required
     BIOS image into the flash ROM. Most common programmers, such as
     the TL866, can be used for this.
-
