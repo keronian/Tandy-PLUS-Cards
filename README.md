@@ -16,6 +16,23 @@ as measured from Tandy's memory/DMA board, Tandy's serial board and
 Rob Krinecki's 3 in 1 board. Includes various notes about safe areas,
 potential places to extend the board dimensions, etc.
 
+BasicSerialPlus
+===============
+
+**Status:** Untested
+
+**Description:** Adds a single 9 pin serial port to a Tandy 1000 EX/HX. Created with early
+Tandy 1000's in mind which have no COM ports from the factory.
+
+Decoding is handled by a 74xx688. Alternatively, a JED file is provided
+for programming the needed decode functionality into a GAL16V8/ATF16V8.
+
+**Configuration:** Before installing, configure the port selection jumpers
+to a COM port not yet present in the system. Details are located on the
+board by the port jumpers. Configure the IRQ jumper to an approriate
+selection. For no IRQ, remove the IRQ jumper. Suggested IRQ settings are
+located on the board by the IRQ jumper.
+
 DualSerialPlus <sup>1</sup>
 ==============
 
