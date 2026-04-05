@@ -1241,7 +1241,7 @@
 		(uuid "f4df5535-f221-4080-abac-90edddcf5af0")
 	)
 	(gr_text "COM A"
-		(at 135.5 82.6 270)
+		(at 138 82.6 -270)
 		(layer "B.SilkS")
 		(uuid "c998cf74-838b-4a94-981a-92d2e5087fc1")
 		(effects
@@ -1249,11 +1249,11 @@
 				(size 2 2)
 				(thickness 0.25)
 			)
-			(justify left bottom mirror)
+			(justify left bottom)
 		)
 	)
 	(gr_text "COM B"
-		(at 135.5 127.325 270)
+		(at 138 127.325 -270)
 		(layer "B.SilkS")
 		(uuid "f0069d3d-99c8-43f0-a726-b3ce4c688bd9")
 		(effects
@@ -1261,7 +1261,7 @@
 				(size 2 2)
 				(thickness 0.25)
 			)
-			(justify left bottom mirror)
+			(justify left bottom)
 		)
 	)
 	(gr_text "Where PCB aligns with bracket."
