@@ -50,7 +50,7 @@ located on the board by the IRQ jumpers.
 EX-HX Combo <sup>1, 2</sup>
 ===========
 
-**Status:** Still in design.
+**Status:** Presented unchanged from parent repo for reference.
 
 **Description:** Multiple upgrades for the Tandy 1000 EX/HX
 in a single board. It adds the following:
@@ -89,14 +89,15 @@ change the dimensions if a bracket is desired for a specific position
 TandyPlusToISA
 ==============
 
-**Status:** Untested, waiting on PCBs
+**Status:** Tested prototype, works perfectly.  Modified so the bracket is a little closer to the back of the case.
+Suggest using thicker copper due to the width of the traces, I used 2oz
 
 **Description:** Allows connection of an ISA card to a Tandy 1000 EX/HX Plus slot.
 
 TandyPlusToISA-Long
 ===================
 
-**Status:** Untested
+**Status:** Untested, but is a copy of the above so I don't expect any issues, also suggest 2oz copper weight
 
 **Description:** Same as the above version, but it's a bit longer in cases that the extra clearance is preferred for things like serial ports
 

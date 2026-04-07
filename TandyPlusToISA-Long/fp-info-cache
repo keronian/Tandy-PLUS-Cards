@@ -1,4 +1,4 @@
-26281700685454482
+26285250661530283
 00Custom
 AlignmentHole
 Hole for fitting PCB tab at right angles.
@@ -61103,12 +61103,26 @@ heatsink
 0
 0
 Imports
+BH600
+
+
+0
+2
+2
+Imports
 SW_CK_OS202011MA0QN1_DPDT_Angled
 C&K sub miniature slide switch, JS series, DPDT, right angle, http://www.ckswitches.com/media/1422/js.pdf
 switch DPDT
 0
 6
 6
+Imports
+SW_EG4208_4PDT_Angled
+C&K sub miniature slide switch, JS series, DPDT, right angle, http://www.ckswitches.com/media/1422/js.pdf
+switch DPDT
+0
+14
+12
 Imports
 SW_SLW-158562-5A-RA-N-D
 
