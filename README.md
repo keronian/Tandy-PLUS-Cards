@@ -3,7 +3,7 @@ Tandy-PLUS-Cards
 
 Tandy PLUS card designs for use in Tandy 1000 EX/HX
 
-I took the work that Jayseon Lee-Steere did creating the Dual Serial card and the Tandy PLUS Template and used those to create a Tandy version of the Dual Serial card.  Additionally, I inverted his ISA to Tandy Plus adapter in order to be able to plug ISA cards into Tandy PLUS slots.  Tandy PLUS Template, EX-HX Combo, and Tandy 1000 Essentials are retained unchanged, but ISA Specific cards were removed to maintain focus for this repo.
+I took the work that Jayseon Lee-Steere did creating the Basic and Dual Serial cards as well as the Tandy PLUS Template and used those to create Tandy versions of the Basic and Dual Serial cards.  Additionally, I inverted his ISA to Tandy Plus adapter in order to be able to plug ISA cards into Tandy PLUS slots.  Tandy PLUS Template, EX-HX Combo, and Tandy 1000 Essentials are retained unchanged, but ISA Specific cards were removed to maintain focus for this repo.
 
 Tandy PLUS Template
 ===================
