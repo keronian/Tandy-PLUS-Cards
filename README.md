@@ -94,6 +94,8 @@ Suggest using thicker copper due to the width of the traces, I used 2oz
 
 **Description:** Allows connection of an ISA card to a Tandy 1000 EX/HX Plus slot.
 
+![Tandy PLUS to ISA Adapter](images/TandyPlusToISA.jpg)
+
 TandyPlusToISA-Long
 ===================
 
