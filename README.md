@@ -36,7 +36,7 @@ located on the board by the IRQ jumper.
 DualSerialPlus <sup>1</sup>
 ==============
 
-**Status:** Untested. Waiting on PCB manufacturing
+**Status:** Tested, works great!
 
 **Description:** Adds *two* 9 pin serial ports to a Tandy 1000 EX/HX. Created with early
 Tandy 1000's in mind which have no COM ports from the factory.
@@ -46,6 +46,20 @@ to COM ports not yet present in the system. Details are located on the
 board by the port jumpers. Configure the IRQ jumpers to an approriate
 selection. For no IRQ, remove the IRQ jumper. Suggested IRQ settings are
 located on the board by the IRQ jumpers.
+
+**Note:** The compact nature of the board means that there are some components on the board
+near the back of the machine... This may interfere with ports on other Tandy cards, though
+it wouldn't be an issue if you have this card in the top position
+
+DualSerialPlusBracket
+=====================
+
+**Status:** Tested, but some small modifications were made after seeing how things lined up,
+So the new version should be a better fit, but I can't say with certainty
+
+**Description:** Bracket for the above serial card.  Contains mounting holes for multiple
+positions.  There are also User Drawings at various positions that can be used to
+change the dimensions if a bracket is desired for a specific position
 
 EX-HX Combo <sup>1, 2</sup>
 ===========
@@ -76,15 +90,6 @@ with the following differences:
   ATA (IDE) port address, etc. are configurable via dip switches.
   Using the default settings, the board is equivalent to the proven
   configuration of Rob Krineki's 3 in 1 board.
-
-DualSerialPlusBracket
-=====================
-
-**Status:** Untested.  Waiting on PCB manufacturing
-
-**Description:** Bracket for the above serial card.  Contains mounting holes for multiple
-positions.  There are also User Drawings at various positions that can be used to
-change the dimensions if a bracket is desired for a specific position
 
 TandyPlusToISA
 ==============
