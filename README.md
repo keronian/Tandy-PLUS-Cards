@@ -51,6 +51,8 @@ located on the board by the IRQ jumpers.
 near the back of the machine... This may interfere with ports on other Tandy cards, though
 it wouldn't be an issue if you have this card in the top position
 
+![Dual Serial PLUS card](Images/DualSerial.jpg)
+
 DualSerialPlusBracket
 =====================
 
@@ -60,6 +62,8 @@ So the new version should be a better fit, but I can't say with certainty
 **Description:** Bracket for the above serial card.  Contains mounting holes for multiple
 positions.  There are also User Drawings at various positions that can be used to
 change the dimensions if a bracket is desired for a specific position
+
+![Dual Serial PLUS Bracket](Images/DualSerialBracket.jpg)
 
 EX-HX Combo <sup>1, 2</sup>
 ===========
