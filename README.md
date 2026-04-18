@@ -63,6 +63,11 @@ So the new version should be a better fit, but I can't say with certainty
 positions.  There are also User Drawings at various positions that can be used to
 change the dimensions if a bracket is desired for a specific position
 
+I have also added .step files that are likely a better option... You can get these CNCed out
+of sheet metal for pretty cheap... (1.5mm conductive anodized aluminum seems like the best option I can see)
+I also shrank the holes on these .step files to allow for tapping for M3 screws, and added a curved edge
+for aesthetic / structural support
+
 ![Dual Serial PLUS Bracket](Images/DualSerialBracket.jpg)
 
 EX-HX Combo <sup>1, 2</sup>
